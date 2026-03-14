@@ -6,6 +6,13 @@ import os
 import re
 from typing import List, Dict, Any
 
+
+@app.get("/health")
+def health():
+    return {"ok": True}
+
+
+
 app = FastAPI()
 
 
