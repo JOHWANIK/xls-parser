@@ -7,13 +7,12 @@ import re
 from typing import List, Dict, Any
 
 
+
+app = FastAPI()
+
 @app.get("/health")
 def health():
     return {"ok": True}
-
-
-
-app = FastAPI()
 
 
 COMPETITOR_CHANNELS = {
